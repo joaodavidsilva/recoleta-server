@@ -5,8 +5,8 @@ export async function up(knex: Knex) {
     table.increments("id").primary();
     table.string("image").notNullable();
     table.string("name").notNullable();
-    table.string("email", 100).notNullable();
-    table.string("whatsapp", 20).notNullable();
+    table.string("email").notNullable();
+    table.string("whatsapp").notNullable();
     table.decimal("latitude").notNullable();
     table.decimal("longitude").notNullable();
     table.string("city").notNullable();
